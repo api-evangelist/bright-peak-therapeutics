@@ -1,7 +1,19 @@
 aid: bright-peak-therapeutics
 name: Bright Peak Therapeutics
-description: 'Bright Peak Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Bright Peak Therapeutics AG is a clinical-stage biotechnology company
+  founded in 2018 and co-located in Allschwil, Switzerland (Switzerland Innovation
+  Park Basel Area) and San Diego / Del Mar, California. The company engineers next-generation
+  multi-functional immunotherapies for cancer and autoimmune disease, using a protein-engineering
+  and site-specific chemical-conjugation platform to build multi-functional PD-1 inhibitors
+  and cytokine immunoconjugates that combine novel and clinically validated mechanisms
+  in a single molecule. Its lead program, BPT567, is a first-in-class PD1-IL18 immunoconjugate
+  that entered a Phase 1/2a clinical trial. The company has raised a USD 90 million
+  Series C led by Johnson & Johnson Innovation (JJDC) alongside Versant Ventures,
+  RA Capital Management, Fidelity, Qatar Investment Authority, Invus, Venrock, KB Investment,
+  Alexandria Venture Investments and Northleaf Capital Partners. Bright Peak is a therapeutics
+  developer, not a software company: it publishes a corporate marketing site and no
+  public developer program, API, SDK or machine-readable specification.'
+image: https://brightpeaktx.com/wp-content/uploads/2021/03/brightpeak-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/bright-peak-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,13 @@ created: '2026-08-08'
 modified: '2026-08-08'
 tags:
 - Company
+- Biotechnology
+- Therapeutics
+- Immunotherapy
+- Oncology
+- Life Sciences
+- Pharmaceuticals
+- Switzerland
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,44 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://brightpeaktx.com/
+- type: About
+  url: https://brightpeaktx.com/about/
+- type: Contact
+  url: https://brightpeaktx.com/contact/
+- type: PrivacyPolicy
+  url: https://brightpeaktx.com/privacy-policy/
+- type: TermsOfService
+  url: https://brightpeaktx.com/terms-of-service/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bright-peak-therapeutics
+- type: SecondaryMarket
   url: https://www.hiive.com/securities/bright-peak-therapeutics-stock
+- type: DomainSecurity
+  url: security/bright-peak-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/bright-peak-therapeutics-llms.txt
+x-enrichment:
+  date: '2026-08-08'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Bright Peak Therapeutics is a clinical-stage biopharma whose product is a
+    PD1-IL18 immunoconjugate, not software; brightpeaktx.com is a five-page WordPress
+    marketing site (home, about, contact, privacy, terms) with no developer, docs,
+    or API path at all.
+  evidence:
+  - url: https://brightpeaktx.com/openapi.json
+    status: 404
+  - url: https://brightpeaktx.com/llms.txt
+    status: 404
+  - url: https://brightpeaktx.com/.well-known/agent-card.json
+    status: 404
+  - url: https://brightpeaktx.com/developers
+    status: 404
+  - url: https://brightpeaktx.com/page-sitemap.xml
+    status: 200
+  checked: '2026-08-08'
